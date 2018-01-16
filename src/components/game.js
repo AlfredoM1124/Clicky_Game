@@ -30,7 +30,7 @@ class Game extends Component {
     let guessedCorrectly = false;
 
     const squaresMap = this.state.friends.map(friend => {
-      // Makes a copy of the friends array to manupulate
+      // Makes a copy of the friends array to manipulate
       const newFriendData = { ...friend };
 
       // then match the id to one in array AND check if click is currently true or false
@@ -55,17 +55,9 @@ class Game extends Component {
     });
 
     // Reads if square was clicked before and displays message
-    // Need to change to display on page********
+    // Need to change to display on page*
     guessedCorrectly ? console.log("Correct guess") : console.log("Incorrect guess");
   }
-
-  // componentDidMount() {
-  //   // this.timerID = setInterval(
-  //   //   () => this.setState(),
-  //   //   1000
-  //   // );
-  // }
-
 
   // Use "building block" component from Squares to render each image in the materialize divs
   render() {
